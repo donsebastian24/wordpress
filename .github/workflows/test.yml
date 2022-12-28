@@ -16,5 +16,5 @@ jobs:
         uses: actions/checkout@v2
       - name: print
         run:
-          curl localhost:80
+          curl http://localhost:80
       
