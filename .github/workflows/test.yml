@@ -19,5 +19,5 @@ jobs:
       - name: curl
         uses: wei/curl@master
         with:
-          args: https://localhost:80
+          args: https://localhost
       
