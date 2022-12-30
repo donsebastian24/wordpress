@@ -16,7 +16,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Start containers
         run: docker-compose -f "docker-compose.yml" up -d --build
-      - name: print
-        run:
-          curl http://localhost:80
+      - name: curl
+        uses: wei/curl@master
+        with:
+          args: https://localhost:80
       
